@@ -1,38 +1,56 @@
-.App {
+body {
+  font-size: 18px;
+  font-family: sans-serif;
+  font-style: normal;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+table {
+  margin: auto;
+}
+table,
+th,
+td {
+  border: 2px solid #333;
+  border-collapse: collapse;
+  padding: 8px;
+  text-align: center;
+}
+th {
+  background-color: #ddd;
+}
+button {
+  border-radius: 4px;
+  cursor: pointer;
+}
+.delete-btn {
+  background-color: red;
+  border: 2px solid red;
+  color: #fff;
+}
+#horizantal-line {
+  background-color: #ddd;
+  width: 100%;
+  height: 2px;
+  margin: 15px 0;
+}
+input[type="text"],
+input[type="number"] {
+  border: 2px solid dodgerblue;
+  border-radius: 4px;
+  margin: 10px 0;
+  padding: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.card {
   align-items: center;
+  background-color: #666;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  display: flex;
+  width: 500px;
+  height: 150px;
+  margin: 20px auto;
+  padding: 20px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
