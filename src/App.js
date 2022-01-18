@@ -78,9 +78,11 @@ function App() {
           onCardFaceChange={handleCardFaceChange}
         />
       )}
+      <div id="horizantal-line"></div>
       <div className="viewer">
-        <div id="horizantal-line"></div>
-        <button onClick={switchMode}>Switch to Viewer</button>
+        <button className="btn-primary" onClick={switchMode}>
+          Switch to Viewer
+        </button>
       </div>
     </div>
   );

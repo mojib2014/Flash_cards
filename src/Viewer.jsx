@@ -12,7 +12,7 @@ export default function Viewer({
       <div className="card" onClick={onCardFaceChange}>
         <h2>{cardFace === "front" ? cards[index].front : cards[index].back}</h2>
       </div>
-      <button className="new-card" onClick={onCardChange}>
+      <button className="btn-primary" onClick={onCardChange}>
         New Card
       </button>
     </div>

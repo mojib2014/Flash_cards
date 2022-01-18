@@ -45,7 +45,9 @@ export default function Editor({ cards, input, onChange, onSubmit, onDelete }) {
           onChange={onChange}
           required
         />
-        <button type="submit">Add Card</button>
+        <button className="btn-primary" type="submit">
+          Add Card
+        </button>
       </form>
     </div>
   );

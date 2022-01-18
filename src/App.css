@@ -4,6 +4,14 @@ body {
   font-style: normal;
   text-align: center;
 }
+.app {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+}
 table {
   margin: auto;
 }
@@ -21,11 +29,24 @@ th {
 button {
   border-radius: 4px;
   cursor: pointer;
+  font-size: inherit;
+  color: #fff;
+}
+.btn-primary {
+  background-color: dodgerblue;
+  border: 2px solid dodgerblue;
+}
+.btn-primary:hover {
+  background-color: rgb(8, 100, 193);
+  border-color: rgb(8, 100, 193);
 }
 .delete-btn {
   background-color: red;
   border: 2px solid red;
-  color: #fff;
+}
+.delete-btn:hover {
+  background-color: darkred;
+  border-color: darkred;
 }
 #horizantal-line {
   background-color: #ddd;
