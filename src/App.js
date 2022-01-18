@@ -4,7 +4,7 @@ import Viewer from "./Viewer";
 import "./App.css";
 
 function App() {
-  const [cards, setCards] = useState([]);
+  const [cards, setCards] = useState([{ id: 1, front: "2 + 3", back: 5 }]);
   const [input, setInput] = useState({ front: "", back: "" });
   const [index, setIndex] = useState(0);
   const [cardFace, setCardFace] = useState("front");
