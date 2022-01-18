@@ -11,7 +11,9 @@ function App() {
   const [editor, setEditor] = useState(true);
 
   useEffect(() => {
-    const cards = JSON.parse(localStorage.getItem("cards"));
+    let cards;
+    if (localStorage.getItem("cards"))
+      cards = JSON.parse(localStorage.getItem("cards"));
     if (!cards) localStorage.setItem("cards", []);
     else setCards(cards);
   }, []);
